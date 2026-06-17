@@ -24,6 +24,7 @@ export default function CustomCursor() {
     const ring = ringRef.current!;
     const label = labelRef.current!;
 
+    document.documentElement.classList.add("has-custom-cursor");
     document.body.classList.add("has-custom-cursor");
     gsap.set([dot, ring], { xPercent: -50, yPercent: -50, opacity: 0 });
 
@@ -143,6 +144,7 @@ export default function CustomCursor() {
     document.addEventListener("pointerleave", onLeave);
 
     return () => {
+      document.documentElement.classList.remove("has-custom-cursor");
       document.body.classList.remove("has-custom-cursor");
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerover", onOver);

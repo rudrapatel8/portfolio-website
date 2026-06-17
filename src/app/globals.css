@@ -36,8 +36,11 @@ body {
 /* Hide the native cursor only on devices that have a precise pointer,
    so touch devices keep their default behaviour. */
 @media (pointer: fine) {
+  html.has-custom-cursor,
   body.has-custom-cursor,
-  body.has-custom-cursor * {
+  body.has-custom-cursor *,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button {
     cursor: none !important;
   }
 }

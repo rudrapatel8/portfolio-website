@@ -105,19 +105,24 @@ export default function Hero() {
 
         <h1
           data-split="headline"
-          className="text-display text-[clamp(2.8rem,11vw,9.5rem)] font-semibold text-ink"
+          className="text-display text-[clamp(3.5rem,17vw,15rem)] font-semibold text-ink"
         >
-          Systems that make complex data actionable.
+          Rudra Patel
         </h1>
 
         <div
           data-hero="sub"
-          className="mt-10 max-w-xl text-base leading-relaxed text-muted md:text-lg"
+          className="mt-8 max-w-xl text-base leading-relaxed text-muted md:text-lg"
         >
           <p className="mask">
+            <span className="block font-display text-lg tracking-tight text-ink md:text-2xl">
+              Machine Learning &amp; Data Science Engineer
+            </span>
+          </p>
+          <p className="mask mt-3">
             <span className="block">
-              I&rsquo;m Rudra Patel — building the layer between rigorous machine
-              learning and elegant software.
+              I build systems that make complex data actionable — the layer
+              between rigorous machine learning and elegant software.
             </span>
           </p>
         </div>

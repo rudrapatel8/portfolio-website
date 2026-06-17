@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useCallback, useLayoutEffect, useRef } from "react";
 import { X, ArrowUpRight } from "lucide-react";
 import { gsap, Flip } from "@/lib/gsap";
 import type { Project } from "@/data/projects";
+import { MediaCanvas } from "./ProjectPanel";
 
 interface ProjectDetailProps {
   project: Project;
@@ -172,25 +172,7 @@ export default function ProjectDetail({
                     background: `radial-gradient(120% 80% at 50% 120%, ${project.accent}22, transparent 60%)`,
                   }}
                 />
-                {project.media.type === "video" ? (
-                  <video
-                    className="h-full w-full object-cover"
-                    src={project.media.src}
-                    poster={project.media.poster}
-                    muted
-                    loop
-                    autoPlay
-                    playsInline
-                  />
-                ) : (
-                  <Image
-                    src={project.media.src}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 66vw"
-                    className="object-cover"
-                  />
-                )}
+                <MediaCanvas project={project} />
               </div>
             </div>
 

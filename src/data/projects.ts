@@ -49,7 +49,6 @@ export const projects: Project[] = [
     media: {
       type: "video",
       src: "/projects/real-estate-valuation-engine.mp4",
-      poster: "/projects/skillsync.png",
     },
     summary:
       "An end-to-end machine learning pipeline and forecasting platform that predicts long-horizon, hyper-local property valuations by fusing macroeconomic, demographic, and live housing signals.",
@@ -78,7 +77,6 @@ export const projects: Project[] = [
     media: {
       type: "video",
       src: "/projects/semantic-code-search-engine.mp4",
-      poster: "/projects/skillsync.png",
     },
     summary:
       "A privacy-first semantic search engine that lets you query large codebases in natural language — entirely on-device, with zero cloud dependency.",

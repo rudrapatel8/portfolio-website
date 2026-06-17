@@ -5,9 +5,9 @@ import { ArrowUpRight } from "lucide-react";
 import { gsap, SplitText, ScrollTrigger } from "@/lib/gsap";
 
 const socials = [
+  { label: "Email", href: "mailto:patelrudrab8@gmail.com" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/rudrapatel8" },
   { label: "GitHub", href: "https://github.com/rudrapatel8" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/" },
-  { label: "Email", href: "mailto:hello@example.com" },
   { label: "Résumé", href: "/resume/Resume.pdf" },
 ];
 
@@ -58,6 +58,17 @@ export default function Contact() {
         internship — tackling massive, messy datasets and AI infrastructure that
         scales.
       </p>
+
+      <a
+        href="mailto:patelrudrab8@gmail.com"
+        data-cursor="link"
+        className="group mt-10 inline-block text-display text-[clamp(1.4rem,4vw,2.6rem)] font-medium text-ink"
+      >
+        <span className="relative">
+          patelrudrab8@gmail.com
+          <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-indigo-soft transition-transform duration-500 group-hover:scale-x-100" />
+        </span>
+      </a>
 
       <div className="mt-12 flex flex-wrap gap-3">
         {socials.map((s) => (

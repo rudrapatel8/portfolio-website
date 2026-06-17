@@ -36,6 +36,7 @@ export default function Nav() {
           {[
             { label: "Work", href: "#work" },
             { label: "About", href: "#about" },
+            { label: "Experience", href: "#experience" },
             { label: "Contact", href: "#contact" },
           ].map((l) => (
             <a

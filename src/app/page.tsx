@@ -7,6 +7,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import ProjectDetail from "@/components/ProjectDetail";
 import type { Project } from "@/data/projects";
@@ -36,6 +37,7 @@ export default function Home() {
           <ProjectShowcase onSelect={handleSelect} />
         </div>
         <About />
+        <Experience />
         <Contact />
       </main>
 

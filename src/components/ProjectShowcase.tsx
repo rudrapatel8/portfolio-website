@@ -89,12 +89,15 @@ export default function ProjectShowcase({ onSelect }: ProjectShowcaseProps) {
       <div ref={track} className="flex h-[100svh] flex-nowrap">
         {/* Intro panel */}
         <div className="relative flex h-[100svh] w-screen shrink-0 flex-col justify-center px-6 md:px-16">
-          <div className="mx-auto w-full max-w-7xl">
+          <div className="orb top-1/4 left-[10%] h-[30vw] w-[30vw] bg-indigo/20" />
+          <div className="orb bottom-[10%] right-[15%] h-[28vw] w-[28vw] bg-cyan-400/12" />
+          <div className="relative mx-auto w-full max-w-7xl">
             <p className="font-display text-sm tracking-[0.4em] text-indigo-soft uppercase">
               Selected Work
             </p>
             <h2 className="mt-6 max-w-4xl text-display text-[clamp(2.5rem,8vw,7rem)] font-semibold text-ink">
-              Six projects. One throughline.
+              Six projects.{" "}
+              <span className="text-gradient">One throughline.</span>
             </h2>
             <p className="mt-8 max-w-md text-muted">
               From hybrid forecasting engines to on-device semantic search — keep

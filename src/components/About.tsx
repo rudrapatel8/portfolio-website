@@ -55,7 +55,9 @@ export default function About() {
       id="about"
       className="relative mx-auto max-w-6xl px-6 py-32 md:px-12 md:py-44"
     >
-      <p className="font-display text-sm tracking-[0.4em] text-indigo-soft uppercase">
+      <div className="orb -top-[5%] right-[5%] h-[32vw] w-[32vw] bg-fuchsia-500/12" />
+      <div className="orb bottom-[10%] -left-[5%] h-[28vw] w-[28vw] bg-indigo/15" />
+      <p className="relative font-display text-sm tracking-[0.4em] text-indigo-soft uppercase">
         About
       </p>
       <p

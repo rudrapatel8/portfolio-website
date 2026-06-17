@@ -91,7 +91,10 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 opacity-70">
         <GridMesh />
       </div>
-      <div className="pointer-events-none absolute -top-1/4 left-1/2 h-[60vw] w-[60vw] -translate-x-1/2 rounded-full bg-indigo/20 blur-[140px]" />
+      {/* colorful ambient orbs */}
+      <div className="orb -top-[20%] left-1/2 h-[55vw] w-[55vw] -translate-x-1/2 bg-indigo/25" />
+      <div className="orb top-1/3 -left-[10%] h-[35vw] w-[35vw] bg-cyan-400/15" />
+      <div className="orb -bottom-[15%] right-[5%] h-[40vw] w-[40vw] bg-fuchsia-500/15" />
 
       <div data-hero="inner" className="relative mx-auto w-full max-w-6xl">
         <div className="mask mb-6">
@@ -115,7 +118,7 @@ export default function Hero() {
           className="mt-8 max-w-xl text-base leading-relaxed text-muted md:text-lg"
         >
           <p className="mask">
-            <span className="block font-display text-lg tracking-tight text-ink md:text-2xl">
+            <span className="text-gradient block font-display text-lg font-semibold tracking-tight md:text-2xl">
               Machine Learning &amp; Data Science Engineer
             </span>
           </p>

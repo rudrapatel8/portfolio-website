@@ -154,7 +154,7 @@ export default function CustomCursor() {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[70] hidden md:block">
+    <div className="pointer-events-none fixed inset-0 z-[120] hidden md:block">
       <div
         ref={ringRef}
         className="fixed top-0 left-0 flex h-[34px] w-[34px] items-center justify-center rounded-full border border-white/40"

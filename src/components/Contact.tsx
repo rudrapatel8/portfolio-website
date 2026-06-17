@@ -42,13 +42,15 @@ export default function Contact() {
       id="contact"
       className="relative mx-auto max-w-6xl px-6 py-32 md:px-12 md:py-48"
     >
-      <p className="font-display text-sm tracking-[0.4em] text-indigo-soft uppercase">
+      <div className="orb -top-[10%] left-1/4 h-[40vw] w-[40vw] bg-indigo/18" />
+      <div className="orb bottom-0 right-0 h-[30vw] w-[30vw] bg-cyan-400/12" />
+      <p className="relative font-display text-sm tracking-[0.4em] text-indigo-soft uppercase">
         Contact
       </p>
 
       <h2
         data-cta
-        className="mt-8 text-display text-[clamp(2.5rem,9vw,8rem)] font-semibold text-ink"
+        className="relative mt-8 text-display text-[clamp(2.5rem,9vw,8rem)] font-semibold text-ink"
       >
         Let&rsquo;s build something.
       </h2>

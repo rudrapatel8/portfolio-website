@@ -19,15 +19,7 @@ export interface Project {
   tagline: string;
   year: string;
   role: string;
-  /**
-   * Media shown in the showcase + detail view.
-   *
-   * NOTE: The two walkthrough videos are NOT committed to the repo (they only
-   * live on the local "Project Media" folder). Drop the .mp4 files into
-   * `public/projects/` using the exact filenames referenced below and they will
-   * appear automatically. Until then the panels gracefully show a poster /
-   * gradient placeholder.
-   */
+  /** Media shown in the showcase + detail view (served locally from /public). */
   media: ProjectMedia;
   summary: string;
   tech: string[];
@@ -64,7 +56,12 @@ export const projects: Project[] = [
       { label: "Data Sources Fused", value: "3+" },
       { label: "Coverage", value: "U.S. Zips" },
     ],
-    links: [{ label: "GitHub Repository", href: "https://github.com/rudrapatel8" }],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/rudrapatel8/realestate-valuation-engine",
+      },
+    ],
     accent: "#6366f1",
   },
   {
@@ -92,7 +89,12 @@ export const projects: Project[] = [
       { label: "Cloud Dependency", value: "Zero" },
       { label: "Index", value: "On-device" },
     ],
-    links: [{ label: "GitHub Repository", href: "https://github.com/rudrapatel8" }],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/rudrapatel8/semantic-code-search-engine",
+      },
+    ],
     accent: "#22d3ee",
   },
   {
@@ -115,7 +117,12 @@ export const projects: Project[] = [
       { label: "Peak Val. Accuracy", value: "93.38%" },
       { label: "Tumor Classes", value: "3 + control" },
     ],
-    links: [{ label: "Kaggle Notebook", href: "https://www.kaggle.com/" }],
+    links: [
+      {
+        label: "Kaggle Notebook",
+        href: "https://www.kaggle.com/code/rudrapatel846/brain-tumor-classification-detection-tool",
+      },
+    ],
     accent: "#a855f7",
   },
   {
@@ -134,7 +141,12 @@ export const projects: Project[] = [
       "Implemented high-fidelity data visualization using Chart.js to interactively map complex time-series stock trajectories.",
       "Designed a secure backend with JWT authentication and MongoDB NoSQL schemas to manage user sessions and track structured learning progressions.",
     ],
-    links: [{ label: "GitHub Repository", href: "https://github.com/rudrapatel8" }],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/rudrapatel8/SkillSync---Stock-Market-Learning-Tool",
+      },
+    ],
     accent: "#34d399",
   },
   {
@@ -173,8 +185,14 @@ export const projects: Project[] = [
       "Designed a responsive, custom-themed UI with modular CSS for a tailored Pomodoro tracking experience.",
     ],
     links: [
-      { label: "GitHub Repository", href: "https://github.com/rudrapatel8" },
-      { label: "Chrome Web Store", href: "#" },
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/rudrapatel8/SamuraiFocus---Chrome-Extension",
+      },
+      {
+        label: "Chrome Web Store",
+        href: "https://chromewebstore.google.com/detail/bhocfnlfhpngdingaoienidofepflgcm?utm_source=item-share-cb",
+      },
     ],
     accent: "#fbbf24",
   },
